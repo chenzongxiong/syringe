@@ -13,6 +13,16 @@
         <module>syringe_injector</module>
     </modules>
 
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.eclipse.jdt</groupId>
+        <artifactId>org.eclipse.jdt.core</artifactId>
+        <version>3.18.0</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -47,14 +57,14 @@
 
     </dependencies>
 
-    <repositories>
-        <repository>
-            <id>gforge.inria.fr-snapshot</id>
-            <name>Maven Repository for Spoon Snapshot</name>
-            <url>http://spoon.gforge.inria.fr/repositories/snapshots/</url>
-            <snapshots />
-        </repository>
-    </repositories>
+    <!-- <repositories> -->
+    <!--     <repository> -->
+    <!--         <id>gforge.inria.fr-snapshot</id> -->
+    <!--         <name>Maven Repository for Spoon Snapshot</name> -->
+    <!--         <url>http://spoon.gforge.inria.fr/repositories/snapshots/</url> -->
+    <!--         <snapshots /> -->
+    <!--     </repository> -->
+    <!-- </repositories> -->
 
     <build>
         <plugins>
