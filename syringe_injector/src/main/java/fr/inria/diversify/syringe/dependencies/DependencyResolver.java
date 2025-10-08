@@ -96,7 +96,8 @@ public class DependencyResolver {
         try {
             logger.info("Resolving dependencies of: " + pomPath);
             List<URL> jarURL = new ArrayList<>();
-            jarURL.addAll(doResolve(configuration, pomPath));
+            // jarURL.addAll(doResolve(configuration, pomPath));
+
             if ( manualClassPath != null )
                 for (String s : manualClassPath) {
                     jarURL.add(Paths.get(s).toUri().toURL());
