@@ -341,7 +341,8 @@ public class SyringeInstrumenterImpl implements SyringeInstrumenter {
         rb.setVerbose(verbose);
         rb.setPhase(phases);
         rb.setTimeOut(0);
-//        rb.initPom(getOutputDir() + "/pom.xml");
+        System.out.println("pom file: " + getOutputDir() + "/pom.xml");
+        // rb.initPom(getOutputDir() + "/pom.xml");
         // rb.runBuilder();
 
         if (rb.getStatus() == -2) {
